@@ -213,3 +213,38 @@ const main = async () => {
 }
 
 // main();
+
+
+
+
+// 11. What is the difference between “var” and “let” keywords in JavaScript?
+
+// The var keyword declares a global variable, which means that the variable can
+// be accessed from anywhere in the code. The let keyword declares a local variable, 
+// which means that the variable can only be accessed within the block of code where it is declared.
+
+/*
+var z = 10;
+{
+    let z = 80;
+
+    console.log(z); //Output is 80
+}
+console.log(z) //Output is 10
+
+*/
+
+
+// 12. What is event delegation in JavaScript?
+
+// Event delegation is a technique where you attach a single event 
+// listener to a parent element, and that event listener handles events 
+// occurring on its child elements. It helps optimize performance and reduce memory consumption.
+
+/*
+document.getElementById("list").addEventListener("click", function(event) {
+    if (event.target.nodeName === "LI") {
+        console.log(event.target.textContent);
+    }
+});
+*/
